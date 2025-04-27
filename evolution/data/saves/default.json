@@ -1,0 +1,19 @@
+{
+  "numberOfGenesInOrganizmus": 1,
+  "chanceToMutateGene": 0.0030000004917383194,
+  "reproductionType": 12345,
+  "visiabilityChanceToMutate": 0.20000000298023224,
+  "imageToCompare": "img/cat.jpg",
+  "numberOfOrganizmusInPopulation": 30,
+  "topCriticusImageSize": 512,
+  "formTypeSettings": 1,
+  "criticusThreshold": 1000,
+  "numberOfChildren": 25,
+  "maxAge": 5,
+  "formTypeChanceToMutate": 0.20000000298023224,
+  "criticusThresMultiplicator": 1.5,
+  "criticusImageSize": 16,
+  "chanceToMutateChromosome": 0.20000000298023224,
+  "chanceToDie": 0.10000000149011612,
+  "maxDispersion": 0.30000001192092896
+}
