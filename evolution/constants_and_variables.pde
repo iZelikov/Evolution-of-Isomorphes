@@ -15,6 +15,7 @@ final String LOADING_IMG = "img/loading.jpeg",
              BUTTON = "img/button.png";
 final String savesPath = "data/saves/";
 
+Runtime runtime = Runtime.getRuntime(); // объект для доступа к информации об используемой памяти и пр.
 int nextCriticusID = 0; // id (номер), который будет присвоен следующему критикусу
 
 boolean gameOver = false, evolutionStarted = false, interfaceReady = false;
@@ -26,7 +27,7 @@ Population population;
 //ArrapopulationsList;  // массив популяций
 Criticus criticus, topCriticus; //критикус
 Organizmus top;
-PImage targetImage, topImage, smallTopImage, leftImage, rightImage; //основная картинка, к которой стремимся; лучшая картинка
+PImage targetImage, topImage, smallTopImage, leftImage, rightImage; // объекты для хранения картинок, выводимых на экран
 PGraphics topPG; //PGraphics, на которм мы рисуем лучшую картинку
 int imgW, imgH, previewW, previewH, space, textSize; //размеры отображаемых картинок и отступы, размер текста
 int topEdge, bottomEdge, leftEdge, rightEdge; //координаты прямоугольника 16/9, в области которого мы рисуем все

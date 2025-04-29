@@ -646,13 +646,19 @@ void normalEvolution() {
   textAlign(LEFT, BOTTOM);
   textSize(textSize); 
   text("Generation " + generation, textLeftEdge, topEdge+space);
-  text("Difference " + difference/(topCriticusSize*topCriticusSize), textLeftEdge, topEdge+space*2);
+  text("Difference " + (float)difference/(topCriticusSize*topCriticusSize), textLeftEdge, topEdge+space*2);
   text("Current Dif. " + curDiff + " / " + round(criticusThreshold/(criticus==null?1:criticus.multiplicator)), 
     textLeftEdge, topEdge+space*3);
   text("Criticus view size " + currentCriticusSize + " px", textLeftEdge, topEdge+space*4);
   text("DNA " + topDnaSize + " genes", textLeftEdge, topEdge+space*5);
   text("Generation time " + oneGenerationTime + " ms", textLeftEdge, topEdge+space*7);
   text("Total time " + formatTime(totalTime), textLeftEdge, topEdge+space*8);
+
+//Memory usage
+  long maxMemory = runtime.maxMemory();
+  long allocatedMemory = runtime.totalMemory();
+  //long freeMemory = runtime.freeMemory();  
+  text("Memory usage " + allocatedMemory/1000000+" / "+maxMemory/1000000+" MB", textLeftEdge, topEdge+space*9);
 }
 
 void reviewEvolution() {
