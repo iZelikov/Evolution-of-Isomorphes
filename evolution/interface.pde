@@ -672,7 +672,8 @@ void reviewEvolution() {
     text("Generation " + (step+1)+" / "+generation, textLeftEdge, topEdge+space*2);
     textAlign(LEFT,TOP);
     text(reviewEvolutionHelpText, textLeftEdge, topEdge+space*5, rightEdge-space-textLeftEdge, space*10);
-    step++;
+    int increment = 1+step/incrementStepPerGenerations; //раз в incrementStepPerGenerations поколений начинаем пропускать по 1 пколению для скорости
+    step+=increment;
   } else {
     evolutionSubStance = NORMAL_EVOLUTION;
   }
