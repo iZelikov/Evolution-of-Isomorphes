@@ -19,7 +19,7 @@ float criticusThresMultiplicator = 1.5;
 String imageToCompare = CAT; //картинка, к которой стремимся (CAT, MONALIZA, SNEGOVIK, DARWIN, VIVA_LA_EVOLUCION) 
 
 int stepByStepDelay = 10; //Задержка, с которой выводятся фреймы в режие Step By Step Drowing
-int incrementStepPerGenerations = 1000; //Раз в сколько поколений ускоряется отрисовка в режиме Review Evolution
+int incrementStepPerGenerations = 100; //Раз в сколько поколений ускоряется отрисовка в режиме Review Evolution
 
 boolean saveHistory = false;
 int autoSaveCount = 500; //количество поколений, после которого мы сохраняем diffenerce в файл
